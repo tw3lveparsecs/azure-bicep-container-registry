@@ -165,3 +165,4 @@ resource lock 'Microsoft.Authorization/locks@2020-05-01' = if (enableDeleteLock)
 
 output name string = acr.name
 output id string = acr.id
+output acrLoginServer string = acr.properties.loginServer
